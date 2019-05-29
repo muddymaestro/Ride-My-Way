@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import img from '../../Assets/images/car.jpg';
+import Button from '../Button/Button';
 
 // Styling Head component
 const Head = styled.header`
@@ -21,14 +22,6 @@ const Head = styled.header`
 
 const Center = styled.section`
     margin: auto;
-`;
-
-const Button = styled.a`
-    background: brown;
-    color: white;
-    padding: 0.6rem 1.3rem;
-    text-decoration: none;
-    border: 0;
 `;
 
 const Header = () => (
