@@ -11,6 +11,9 @@ import DriverRegister from './Pages/Driver-sign-up';
 import DriverLogin from './Pages/Driver-sign-in';
 import PassengerRegister from './Pages/Passenger-sign-up';
 import PassengerLogin from './Pages/Passenger-sign-in';
+import DriverProfile from './Pages/Driver-profile';
+import RideOffer from './Pages/Ride-offer';
+import RideRequest from './Pages/Ride-request';
 
 const Main =  () => (
         <Switch>
@@ -19,11 +22,14 @@ const Main =  () => (
           <Route path="/contact-us" component={Contact} /> 
           <Route path="/home" component={Home} />
           <Route path="/sign-up/driver" component={DriverRegister} />
-          <Route path="/sign-up" component={Register} />
           <Route path="/sign-in/driver" component={DriverLogin} />
+          <Route path="/sign-up" component={Register} />
           <Route path="/sign-up/passenger" component={PassengerRegister} />
           <Route path="/sign-in/passenger" component={PassengerLogin} />
-          <Route path="/sign-in" component={Login} />         
+          <Route path="/sign-in" component={Login} />
+          <Route path="/driver/profile" component={DriverProfile} />
+          <Route path="/driver/ride-offers" component={RideOffer} />
+          <Route path="/driver/ride-requests" component={RideRequest} />         
         </Switch>
     );
 
