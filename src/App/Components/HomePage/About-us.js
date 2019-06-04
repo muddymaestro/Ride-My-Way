@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const About = styled.section`
+    position: relative;
+    bottom: 8px;
     text-align: center;
     margin-bottom: 30px;
     padding-left: 5px;

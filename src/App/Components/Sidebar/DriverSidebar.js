@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 const NavWrapper = styled.nav`
     height: 100%;
@@ -14,35 +15,43 @@ const NavList = styled.ul`
     background-color: black;
 `;
 
-const NavItem = styled.li`
+const NavItem = styled.li``;
 
-a {
-    display: block;
-    color: white;
-    padding: 8px 0 8px 16px;
-    text-decoration: none;
-    margin-bottom: 20px;
-    border-bottom: 1px solid white;
-}
-
-a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-a:hover:not(.active) {
-    background-color: brown;
-    color: white;
-}
-`;
+const Link = {
+    display: "block",
+    color: "white",
+    padding: "8px 0 8px 16px",
+    textDecoration: "none",
+    marginBottom: "20px",
+    borderBottom: "1px solid white"
+};
 
 const Sidebar = () => (
     <NavWrapper>
             <NavList>
-                <NavItem><a href="/driver/profile">PROFILE</a></NavItem>
-                <NavItem><a href="/driver/ride-offers">RIDE OFFERS</a></NavItem>
-                <NavItem><a href="/driver/ride-requests">RIDE REQUESTS</a></NavItem>
-                <NavItem><a href="/sign-in/driver">LOG OUT</a></NavItem>    
+                <NavItem>
+                    <NavLink to="/driver/profile" style={Link} activeStyle={{backgroundColor: "brown"}}>
+                        PROFILE
+                    </NavLink>
+                </NavItem>
+
+                <NavItem>
+                    <NavLink to="/driver/ride-offers" style={Link} activeStyle={{backgroundColor: "brown"}}>
+                        RIDE OFFERS
+                    </NavLink>
+                </NavItem>
+
+                <NavItem>
+                    <NavLink to="/driver/ride-requests" style={Link} activeStyle={{backgroundColor: "brown"}}>
+                        RIDE REQUESTS
+                    </NavLink>
+                </NavItem>
+
+                <NavItem>
+                    <NavLink to="/sign-in/driver" style={Link} activeStyle={{backgroundColor: "brown"}}>
+                        LOGOUT
+                    </NavLink>
+                </NavItem>    
             </NavList>
         </NavWrapper>
 );

@@ -5,7 +5,7 @@ import DriverDetails from '../Components/DriverDashboard/Profile';
 
 const DriverProfile = () => (
     <Grid columns={"20% 80%"} >
-        <Cell> <Sidebar /> </Cell>
+        <Cell style={{height: "100%"}} > <Sidebar /> </Cell>
         <Cell> <DriverDetails /> </Cell>
     </Grid>
 );

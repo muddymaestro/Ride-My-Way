@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import img from '../../Assets/images/car.jpg';
-import Button from '../Button/Button';
 
 // Styling Head component
 const Head = styled.header`
-    hieght: 100%;
+    height: 100%;
     min-height: 400px;
     background: url(${img});
     background-size: cover;
     background-position: center;
+    position: relative;
+    bottom: 8px;
     padding: 3rem;
     text-align: center;
     color: white;
@@ -18,6 +19,14 @@ const Head = styled.header`
     flex-direction: column;
     align-items: start;
     justify-content: center;
+`;
+
+const Button = styled.a`
+    background: brown;
+    color: white;
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
 `;
 
 const Center = styled.section`

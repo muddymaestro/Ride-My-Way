@@ -50,11 +50,11 @@ const Nav = () => (
             </NavItem>
 
             <NavItem>
-              <a href="/about-us">ABOUT US</a>
+              <a href="#">ABOUT US</a>
             </NavItem>
 
             <NavItem>
-              <a href="/contact-us">CONTACT US</a>
+              <a href="#">CONTACT US</a>
             </NavItem>
 
             <NavItem style={{marginLeft: 'auto'}}>

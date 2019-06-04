@@ -22,7 +22,7 @@ const InputText = styled.input`
     box-sizing: border-box;
 `;
 
-const InputSubmit = styled.button`
+const InputSubmit = styled.a`
     width: auto;
     background-color: blue;
     color: white;
@@ -31,6 +31,8 @@ const InputSubmit = styled.button`
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 
     &:hover {
         background-color: #45a049;

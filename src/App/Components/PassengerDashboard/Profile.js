@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEdit } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEdit } from '@fortawesome/free-solid-svg-icons'
 import { Table, Tr, Th, Td } from '../Table/Table';
 
 const Button = styled.a`
@@ -30,7 +30,7 @@ const font = {
     right: "5px"
 }
 
-const DriverDetails = () => (
+const PassengerDetails = () => (
     <Table>
         <Tr>
             <Th></Th>
@@ -39,15 +39,15 @@ const DriverDetails = () => (
         </Tr>
         <Tr>
             <Td>
-                <PersonImage src={require("../../Assets/images/profile.jpg")} alt="" />
-                <p><PersonName>Mohamed Mdoe</PersonName></p>
+                <PersonImage src={require("../../Assets/images/profile2.jpg")} alt="" />
+                <p><PersonName>Naimaya Mdoe</PersonName></p>
             </Td>
             <Td></Td>
             <Td><Button><FontAwesomeIcon style={font} icon={faEdit} />Edit</Button></Td>
         </Tr>
         <Tr>
             <Td><strong>Email</strong></Td>
-            <Td>medinho852@gmail.com</Td>
+            <Td>naimaya@gmail.com</Td>
             <Td><Button><FontAwesomeIcon style={font} icon={faEdit} />Edit</Button></Td>
         </Tr>
         <Tr>
@@ -68,4 +68,4 @@ const DriverDetails = () => (
     </Table>
 );
 
-export default DriverDetails;
+export default PassengerDetails;

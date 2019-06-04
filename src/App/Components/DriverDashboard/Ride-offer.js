@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDelete } from '@fortawesome/free-solid-svg-icons'
 import BoxShadow from '../BoxShadow/Box-shadow';
 import { InputText } from '../Form/Form';
 
